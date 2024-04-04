@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://bf11q27yj3hj2"]
+
+[ext_resource type="Texture2D" uid="uid://cliin5c7uypu8" path="res://art/Pumpkinboy Front.PNG" id="1_mv48x"]
+[ext_resource type="Script" path="res://characters/player.gd" id="1_rg5oh"]
+[ext_resource type="Texture2D" uid="uid://b52vcsv7871mj" path="res://art/Pumpkinboy Front - Copy.PNG" id="3_o0sk2"]
+[ext_resource type="Texture2D" uid="uid://d10tsylabkc5h" path="res://art/Pumpkinboy Left.png" id="4_7pcgv"]
+[ext_resource type="Texture2D" uid="uid://ckwxhliaprngd" path="res://art/Pumpkinboy Right.png" id="5_cd7ch"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u0ey2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mv48x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_o0sk2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 0.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_7pcgv")
+}],
+"loop": true,
+"name": &"run_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_cd7ch")
+}],
+"loop": true,
+"name": &"run_right",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7aq1n"]
+size = Vector2(15, 29)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rg5oh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+rotation = 0.0698132
+scale = Vector2(0.08, 0.08)
+sprite_frames = SubResource("SpriteFrames_u0ey2")
+animation = &"run_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_7aq1n")
+
+[node name="interaction_components" type="Node2D" parent="."]
+z_index = 1
+
+[node name="InteractionArea" type="Area2D" parent="interaction_components"]
+z_index = 1
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="interaction_components/InteractionArea"]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_7aq1n")
+
+[node name="InteractLabel" type="Label" parent="interaction_components"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -37.0
+offset_right = 20.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 13
+text = "Test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="interaction_components/InteractionArea" to="." method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="interaction_components/InteractionArea" to="." method="_on_interaction_area_area_exited"]
