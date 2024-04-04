@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctobekr4i6i0k"]
+
+[ext_resource type="Script" path="res://levels/HomeScreen.gd" id="1_vfwg3"]
+
+[node name="HomeScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vfwg3")
+
+[node name="playNew" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.734375
+anchor_top = 0.49537
+anchor_right = 0.923611
+anchor_bottom = 0.589506
+offset_bottom = 3.05176e-05
+text = "New"
+text_overrun_behavior = 2
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="playContinue" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.735243
+anchor_top = 0.597222
+anchor_right = 0.924479
+anchor_bottom = 0.691358
+disabled = true
+text = "Continue"
+text_overrun_behavior = 2
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="menuOptions" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.735243
+anchor_top = 0.699074
+anchor_right = 0.924479
+anchor_bottom = 0.79321
+offset_bottom = -3.05176e-05
+text = "Options"
+text_overrun_behavior = 2
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="gameExit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.735243
+anchor_top = 0.804012
+anchor_right = 0.924479
+anchor_bottom = 0.898148
+text = "Exit"
+text_overrun_behavior = 2
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="playNew" to="." method="_on_play_continue_pressed"]
+[connection signal="pressed" from="gameExit" to="." method="_on_game_exit_pressed"]
