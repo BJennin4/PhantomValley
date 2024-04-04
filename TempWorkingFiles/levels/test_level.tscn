@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0b4vpajfaakt"]
+[gd_scene load_steps=11 format=3 uid="uid://c0b4vpajfaakt"]
 
 [ext_resource type="Texture2D" uid="uid://dylfmbe70dnrm" path="res://art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_0r4iw"]
-[ext_resource type="Texture2D" uid="uid://c3wyb2td5civ" path="res://art/buildings.png" id="1_8g0aj"]
+[ext_resource type="Texture2D" uid="uid://nk432p7p62xg" path="res://art/buildings.png" id="1_8g0aj"]
 [ext_resource type="Texture2D" uid="uid://cjhh5pqvcuj5x" path="res://art/backgrounds/Night sky background.PNG" id="1_xcxcx"]
 [ext_resource type="PackedScene" uid="uid://bf11q27yj3hj2" path="res://characters/player.tscn" id="2_ra8gk"]
 [ext_resource type="PackedScene" uid="uid://b4hl3dxe0738c" path="res://game_components/interact_area/InteractArea.tscn" id="5_hykkv"]
+[ext_resource type="Texture2D" uid="uid://duc73svjcwc0x" path="res://art/backgrounds/Clouds.png" id="6_64b1x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7r07"]
 texture = ExtResource("1_8g0aj")
@@ -5685,14 +5686,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_q158j")
 
 [node name="TestLevel" type="Node2D"]
-
-[node name="Skybox" type="TextureRect" parent="."]
-light_mask = 0
-offset_left = -297.0
-offset_top = -468.0
-offset_right = 2063.0
-offset_bottom = 1172.0
-texture = ExtResource("1_xcxcx")
+scale = Vector2(3, 3)
 
 [node name="Buildings" type="TileMap" parent="."]
 scale = Vector2(0.6, 0.6)
@@ -5724,3 +5718,21 @@ position = Vector2(202, 102)
 interact_label = "Key Area"
 interact_type = "print_text"
 interact_value = "Key!"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Skybox" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(50, 50)
+motion_mirroring = Vector2(2360, 1640)
+
+[node name="Stars" type="Sprite2D" parent="ParallaxBackground/Skybox"]
+texture = ExtResource("1_xcxcx")
+centered = false
+
+[node name="Cloudbox" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(2360, 1640)
+
+[node name="Clouds" type="Sprite2D" parent="ParallaxBackground/Cloudbox"]
+position = Vector2(1280, -393)
+texture = ExtResource("6_64b1x")
