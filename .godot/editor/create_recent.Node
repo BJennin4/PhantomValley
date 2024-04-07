@@ -1,0 +1,14 @@
+Sprite2D
+ParallaxLayer
+ParallaxBackground
+Label
+CollisionShape2D
+Area2D
+Node2D
+TextureRect
+AnimatedSprite2D
+TileMap
+WorldEnvironment
+RemoteTransform2D
+Camera2D
+CharacterBody2D
