@@ -5722,7 +5722,7 @@ interact_value = "Key!"
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Skybox" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(50, 50)
+motion_scale = Vector2(0.2, 0.2)
 motion_mirroring = Vector2(2360, 1640)
 
 [node name="Stars" type="Sprite2D" parent="ParallaxBackground/Skybox"]
