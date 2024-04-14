@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713055420
+::res://::1713058993
 icon.svg::CompressedTexture2D::7414876175625863732::1713055276::1713055276::1::::<><>::
 ::res://addons/::1713055276
 ::res://addons/godot-git-plugin/::1713055276
@@ -8,7 +8,7 @@ plugin.cfg::TextFile::-1::1713055276::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1713055276::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1713055276
 ::res://addons/godot-git-plugin/macos/::1713055276
-::res://addons/godot-git-plugin/win64/::1713055416
+::res://addons/godot-git-plugin/win64/::1713058990
 ::res://art/::1713055276
 3D Turnaround Pumpkin Boy 1.PNG::CompressedTexture2D::5015558344811160991::1713055276::1713055276::1::::<><>::
 buildings.png::CompressedTexture2D::934910982632332456::1713055276::1713055276::1::::<><>::
@@ -28,36 +28,36 @@ Interior-01.png::CompressedTexture2D::8858200323685683678::1713055276::171305527
 Props-Rocks.png::CompressedTexture2D::3179899294989622653::1713055276::1713055276::1::::<><>::
 Tiles.png::CompressedTexture2D::8866827528367472298::1713055276::1713055276::1::::<><>::
 Tree-Assets.png::CompressedTexture2D::2967727589661582757::1713055276::1713055276::1::::<><>::
-::res://characters/::1713055982
+::res://characters/::1713058932
 player.gd::GDScript::-1::1713055276::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2792647406671004889::1713055982::0::1::::<><>::uid://cliin5c7uypu8::::res://art/Pumpkinboy Front.PNG<>res://characters/player.gd<>uid://b52vcsv7871mj::::res://art/Pumpkinboy Front - Copy.PNG<>uid://d10tsylabkc5h::::res://art/Pumpkinboy Left.png<>uid://ckwxhliaprngd::::res://art/Pumpkinboy Right.png
+player.tscn::PackedScene::2792647406671004889::1713058932::0::1::::<><>::uid://cliin5c7uypu8::::res://art/Pumpkinboy Front.PNG<>res://characters/player.gd<>uid://b52vcsv7871mj::::res://art/Pumpkinboy Front - Copy.PNG<>uid://d10tsylabkc5h::::res://art/Pumpkinboy Left.png<>uid://ckwxhliaprngd::::res://art/Pumpkinboy Right.png
 ::res://game_components/::1713056018
-::res://game_components/interact_area/::1713055982
+::res://game_components/interact_area/::1713058933
 InteractArea.gd::GDScript::-1::1713055276::0::1::::Interactable<>Area2D<>::
-InteractArea.tscn::PackedScene::4437065875941220132::1713055982::0::1::::<><>::res://game_components/interact_area/InteractArea.gd
-::res://game_components/inventory/::1713056018
-inventory_slot.tscn::PackedScene::1083506332659562201::1713055967::0::1::::<><>::res://game_components/inventory/scripts/slot_display.gd<>uid://bt8yqhk2xfso6::::res://game_components/inventory/textures/UI/inventory-slot.png
-inv_ui.tscn::PackedScene::6842165139833209415::1713055967::0::1::::<><>::res://game_components/inventory/scripts/Inv_UI.gd<>uid://bk7hyoo7slpgf::::res://game_components/inventory/textures/UI/inventory-background.png<>uid://po4gq16xvfrl::::res://game_components/inventory/inventory_slot.tscn
-player.tres::Resource/Inventory::4312613385489851226::1713055967::0::1::::<><>::uid://6tg5vg0dxp4g::::res://game_components/inventory/items/camera.tres<>uid://c74o0mlyhtfdf::::res://game_components/inventory/items/key.tres<>uid://nwc2far8k6q3::::res://game_components/inventory/items/photo.tres<>res://game_components/inventory/scripts/inventory.gd
+InteractArea.tscn::PackedScene::4437065875941220132::1713058933::0::1::::<><>::res://game_components/interact_area/InteractArea.gd
+::res://game_components/inventory/::1713058934
+inventory_slot.tscn::PackedScene::1083506332659562201::1713058934::0::1::::<><>::res://game_components/inventory/scripts/slot_display.gd<>uid://bt8yqhk2xfso6::::res://game_components/inventory/textures/UI/inventory-slot.png
+inv_ui.tscn::PackedScene::6842165139833209415::1713058933::0::1::::<><>::res://game_components/inventory/scripts/Inv_UI.gd<>uid://bk7hyoo7slpgf::::res://game_components/inventory/textures/UI/inventory-background.png<>uid://po4gq16xvfrl::::res://game_components/inventory/inventory_slot.tscn
+player.tres::Resource/Resource::4312613385489851226::1713055967::0::1::::<><>::uid://6tg5vg0dxp4g::::res://game_components/inventory/items/camera.tres<>uid://c74o0mlyhtfdf::::res://game_components/inventory/items/key.tres<>uid://nwc2far8k6q3::::res://game_components/inventory/items/photo.tres<>res://game_components/inventory/scripts/inventory.gd
 slot_item.gd::GDScript::-1::1712637653::0::1::::<>Sprite2D<>::
 ::res://game_components/inventory/items/::1713056018
-camera.tres::Resource/inv_item::2215496319279881764::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://bkrwmxrbi3o7h::::res://game_components/inventory/textures/Items/camera.png
-key.tres::Resource/inv_item::7079646649790932295::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://fmvm7mg676bq::::res://game_components/inventory/textures/Items/key.png
-photo.tres::Resource/inv_item::958041191738382648::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://ux0fqkilb2dg::::res://game_components/inventory/textures/Items/photo.png
-::res://game_components/inventory/scripts/::1713056018
+camera.tres::Resource/Resource::2215496319279881764::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://bkrwmxrbi3o7h::::res://game_components/inventory/textures/Items/camera.png
+key.tres::Resource/Resource::7079646649790932295::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://fmvm7mg676bq::::res://game_components/inventory/textures/Items/key.png
+photo.tres::Resource/Resource::958041191738382648::1713055967::0::1::::<><>::res://game_components/inventory/scripts/inventory_item.gd<>uid://ux0fqkilb2dg::::res://game_components/inventory/textures/Items/photo.png
+::res://game_components/inventory/scripts/::1713057267
 inventory.gd::GDScript::-1::1712637653::0::1::::Inventory<>Resource<>::
 inventory_item.gd::GDScript::-1::1712637653::0::1::::inv_item<>Resource<>::
-Inv_UI.gd::GDScript::-1::1712700940::0::1::::<>Control<>::
+Inv_UI.gd::GDScript::-1::1713057267::0::1::::<>Control<>::
 slot_display.gd::GDScript::-1::1712637653::0::1::::<>Panel<>::
 ::res://game_components/inventory/textures/::1713056018
-::res://game_components/inventory/textures/Items/::1713056018
+::res://game_components/inventory/textures/Items/::1713056021
 camera.png::CompressedTexture2D::3124761979616134335::1712637653::1713056021::1::::<><>::
 key.png::CompressedTexture2D::377014937214023902::1712637653::1713056021::1::::<><>::
 photo.png::CompressedTexture2D::1452785271092608784::1712637653::1713056021::1::::<><>::
-::res://game_components/inventory/textures/UI/::1713056018
+::res://game_components/inventory/textures/UI/::1713056021
 inventory-background.png::CompressedTexture2D::3154837844639021829::1712637653::1713056021::1::::<><>::
 inventory-slot.png::CompressedTexture2D::3789619343597767611::1712637653::1713056021::1::::<><>::
-::res://levels/::1713055982
+::res://levels/::1713058931
 HomeScreen.gd::GDScript::-1::1713055276::0::1::::<>Control<>::
 home_screen.tscn::PackedScene::6135399098058763348::1713055276::0::1::::<><>::res://levels/HomeScreen.gd<>uid://cjwpphi02myr0::::res://art/backgrounds/background.webp
-test_level.tscn::PackedScene::6531425918819154775::1713055982::0::1::::<><>::uid://dylfmbe70dnrm::::res://art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png<>uid://nk432p7p62xg::::res://art/buildings.png<>uid://cjhh5pqvcuj5x::::res://art/backgrounds/Night sky background.PNG<>uid://bf11q27yj3hj2::::res://characters/player.tscn<>uid://b4hl3dxe0738c::::res://game_components/interact_area/InteractArea.tscn<>uid://duc73svjcwc0x::::res://art/backgrounds/Clouds.png
+test_level.tscn::PackedScene::6531425918819154775::1713058931::0::1::::<><>::uid://dylfmbe70dnrm::::res://art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png<>uid://nk432p7p62xg::::res://art/buildings.png<>uid://cjhh5pqvcuj5x::::res://art/backgrounds/Night sky background.PNG<>uid://bf11q27yj3hj2::::res://characters/player.tscn<>uid://b4hl3dxe0738c::::res://game_components/interact_area/InteractArea.tscn<>uid://duc73svjcwc0x::::res://art/backgrounds/Clouds.png<>uid://c4qnpv8yd57g2::::res://game_components/inventory/inv_ui.tscn
