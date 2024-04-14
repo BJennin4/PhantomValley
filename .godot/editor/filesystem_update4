@@ -1,1 +1,3 @@
 res://levels/test_level.tscn
+res://characters/player.tscn
+res://game_components/interact_area/InteractArea.tscn
