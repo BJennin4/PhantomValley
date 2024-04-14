@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inv_item" load_steps=3 format=3 uid="uid://c74o0mlyhtfdf"]
+
+[ext_resource type="Script" path="res://game_components/inventory/scripts/inventory_item.gd" id="1_lqcpl"]
+[ext_resource type="Texture2D" uid="uid://fmvm7mg676bq" path="res://game_components/inventory/textures/Items/key.png" id="2_jpcgu"]
+
+[resource]
+script = ExtResource("1_lqcpl")
+name = "key"
+texture = ExtResource("2_jpcgu")

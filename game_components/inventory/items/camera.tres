@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inv_item" load_steps=3 format=3 uid="uid://6tg5vg0dxp4g"]
+
+[ext_resource type="Script" path="res://game_components/inventory/scripts/inventory_item.gd" id="1_ipsb7"]
+[ext_resource type="Texture2D" uid="uid://bkrwmxrbi3o7h" path="res://game_components/inventory/textures/Items/camera.png" id="2_2b1dv"]
+
+[resource]
+script = ExtResource("1_ipsb7")
+name = "camera"
+texture = ExtResource("2_2b1dv")

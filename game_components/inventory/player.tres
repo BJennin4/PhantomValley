@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=5 format=3 uid="uid://b2pcd256gqaes"]
+
+[ext_resource type="Resource" uid="uid://6tg5vg0dxp4g" path="res://game_components/inventory/items/camera.tres" id="1_18olk"]
+[ext_resource type="Resource" uid="uid://c74o0mlyhtfdf" path="res://game_components/inventory/items/key.tres" id="2_gfx6c"]
+[ext_resource type="Resource" uid="uid://nwc2far8k6q3" path="res://game_components/inventory/items/photo.tres" id="3_pxyqm"]
+[ext_resource type="Script" path="res://game_components/inventory/scripts/inventory.gd" id="4_4uwfn"]
+
+[resource]
+script = ExtResource("4_4uwfn")
+items = Array[Resource("res://game_components/inventory/scripts/inventory_item.gd")]([ExtResource("1_18olk"), null, null, null, ExtResource("2_gfx6c"), ExtResource("2_gfx6c"), null, null, null, null, ExtResource("3_pxyqm"), null, null, null, ExtResource("3_pxyqm"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ExtResource("2_gfx6c"), ExtResource("3_pxyqm"), ExtResource("3_pxyqm")])
