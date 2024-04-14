@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c0b4vpajfaakt"]
+[gd_scene load_steps=12 format=3 uid="uid://c0b4vpajfaakt"]
 
 [ext_resource type="Texture2D" uid="uid://dylfmbe70dnrm" path="res://art/Legacy-Fantasy - High Forest 2.3/Assets/Tiles.png" id="1_0r4iw"]
 [ext_resource type="Texture2D" uid="uid://nk432p7p62xg" path="res://art/buildings.png" id="1_8g0aj"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bf11q27yj3hj2" path="res://characters/player.tscn" id="2_ra8gk"]
 [ext_resource type="PackedScene" uid="uid://b4hl3dxe0738c" path="res://game_components/interact_area/InteractArea.tscn" id="5_hykkv"]
 [ext_resource type="Texture2D" uid="uid://duc73svjcwc0x" path="res://art/backgrounds/Clouds.png" id="6_64b1x"]
+[ext_resource type="PackedScene" uid="uid://c4qnpv8yd57g2" path="res://game_components/inventory/inv_ui.tscn" id="7_bgk08"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7r07"]
 texture = ExtResource("1_8g0aj")
@@ -5736,3 +5737,22 @@ motion_mirroring = Vector2(2360, 1640)
 [node name="Clouds" type="Sprite2D" parent="ParallaxBackground/Cloudbox"]
 position = Vector2(1280, -393)
 texture = ExtResource("6_64b1x")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inv_UI" parent="CanvasLayer" instance=ExtResource("7_bgk08")]
+process_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -338.5
+offset_top = -498.0
+offset_right = 338.5
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+metadata/_edit_use_anchors_ = true
