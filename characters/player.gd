@@ -9,6 +9,7 @@ extends CharacterBody2D
 @onready var all_interactions = []
 @onready var interact_label = $"interaction_components/InteractLabel"
 
+
 func _ready():
 	update_interactions()
 
@@ -35,7 +36,7 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_vector("left", "right", "up", "down")
-	if direction:
+	if direction && !AutoloadVariables.ghost_animation_lock:
 		velocity.x = direction.x * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
