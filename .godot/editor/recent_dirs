@@ -1,6 +1,9 @@
+res://characters
+res://characters/npc/ghost/dialogue
+res://art
+res://characters/npc/ghost
 res://game_components/inventory/scripts
 res://art/backgrounds
 res://levels
 res://game_components/interact_area
-res://characters
 res://
