@@ -1,6 +1,2 @@
-res://levels/test_level.tscn
+res://characters/npc/ghost/dialogue/dialogue.tscn
 res://game_components/inventory/scripts/Inv_UI.gd
-res://characters/player.tscn
-res://game_components/interact_area/InteractArea.tscn
-res://game_components/inventory/inv_ui.tscn
-res://game_components/inventory/inventory_slot.tscn
