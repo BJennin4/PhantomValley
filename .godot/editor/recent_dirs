@@ -1,3 +1,6 @@
+res://game_components/quest_items
+res://game_components/inventory/textures/Items
+res://game_components/inventory/items
 res://characters
 res://characters/npc/ghost/dialogue
 res://art

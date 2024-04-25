@@ -18,13 +18,12 @@ func _on_chat_detection_area_body_entered(body):
 		AutoloadVariables.last_talked_to_ghost = ghost_id
 
 	#Activates on player collision with orange col box when Quest mode == true & player has correct ghost item & and ghost is last ghost talked to
-	if (body.name == player && AutoloadVariables.quest_mode) && (AutoloadVariables.has_quest_item[AutoloadVariables.last_talked_to_ghost] && ghost_id == AutoloadVariables.last_talked_to_ghost):
+	if (body.name == player && AutoloadVariables.quest_mode) \
+	&& (AutoloadVariables.has_quest_item[AutoloadVariables.last_talked_to_ghost] \
+	&& ghost_id == AutoloadVariables.last_talked_to_ghost):
 		AutoloadVariables.ghost_animation_lock = true 
 		$Dialogue.start(ghost_name)
 		set_ghost_completion()
-	#debug for testing without inventory
-		print("Talking to ghost ", ghost_id, " ghost completion set to ", AutoloadVariables.ghosts_completed[ghost_id])
-		print("quest mode set to ", AutoloadVariables.quest_mode)
 
 #Set corresponding ghost ID & Name when enum is selected in inspector
 func set_ghost():

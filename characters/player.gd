@@ -9,6 +9,8 @@ extends CharacterBody2D
 @onready var all_interactions = []
 @onready var interact_label = $"interaction_components/InteractLabel"
 
+var item_value = "*"
+
 
 func _ready():
 	update_interactions()
@@ -26,7 +28,8 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and \
+	(is_on_floor() and !AutoloadVariables.ghost_animation_lock):
 		velocity.y = jump_velocity
 		
 	# Handle interact
@@ -86,3 +89,12 @@ func execute_interaction():
 		var current_interaction = all_interactions[0]
 		match current_interaction.interact_type:
 			"print_text" : print(current_interaction.interact_value)
+			"add_item" : inv_add_item(current_interaction.interact_value)
+				
+func inv_add_item(name):
+	print("trying to add item")
+	set_has_quest_item()
+	
+func set_has_quest_item():
+	if current_interaction.interact_value == "Key":
+		AutoloadVariables.has_quest_item[0] = true;

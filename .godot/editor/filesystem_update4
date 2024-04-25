@@ -1,2 +1,10 @@
-res://characters/npc/ghost/dialogue/dialogue.tscn
+res://levels/test_level.tscn
 res://game_components/inventory/scripts/Inv_UI.gd
+res://characters/npc/ghost/ghost.gd
+res://characters/player.tscn
+res://game_components/interact_area/InteractArea.tscn
+res://characters/npc/ghost/dialogue/dialogue.tscn
+res://characters/npc/ghost/ghost.tscn
+res://characters/player.gd
+res://game_components/interact_area/InteractArea.gd
+res://game_components/quest_items/key.tscn

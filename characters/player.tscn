@@ -41,6 +41,8 @@ size = Vector2(15, 29)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_rg5oh")
+speed = null
+jump_velocity = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr3o7s15jvrmf"]
+
+[ext_resource type="Texture2D" uid="uid://fmvm7mg676bq" path="res://game_components/inventory/textures/Items/key.png" id="1_psy7e"]
+[ext_resource type="Script" path="res://game_components/interact_area/InteractArea.gd" id="2_eag24"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wef4j"]
+radius = 13.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_psy7e")
+
+[node name="Interactable" type="Area2D" parent="Sprite2D"]
+collision_layer = 2
+script = ExtResource("2_eag24")
+interact_label = "Key"
+interact_type = "add_item"
+interact_value = "Key"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Interactable"]
+shape = SubResource("CircleShape2D_wef4j")
